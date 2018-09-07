@@ -1,13 +1,11 @@
 // listen for changes on each INPUT checkbox tag
-checked = []
-$( document ).ready(function () {
-  $('input:checkbox').change( function () {
+let checked = {};
+$(document).ready(function () {
+  $('input:checkbox').change(function () {
     if ($(this).is(':checked')) {
-      console.log('checked');
-      checked.push($(this).dataset.id);
+      checked[$(this).data('id')] = $(this).data('name');
     } else {
-      console.log('unchecked');
+      delete checked[$(this).data('id')];
     }
   });
-console.log(checked);
 });
