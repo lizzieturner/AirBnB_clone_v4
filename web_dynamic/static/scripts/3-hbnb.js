@@ -34,7 +34,7 @@ $.get(url, function (data, status) {
 // implement place search function
 $.ajax({
   type: 'POST',
-  url: 'http://127.0.0.1:5002/api/v1/places_search/',
+  url: 'http://0.0.0.0:5001/api/v1/places_search/',
   contentType: 'application/json',
   data: '{}',
   success: function (data) {
