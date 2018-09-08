@@ -7,7 +7,7 @@ $.get(url, function (data, status) {
     $('div#api_status').addClass('available');
   } else {
     $('div#api_status').removeClass('available');
-  };
+  }
 });
 
 // listen for changes on each INPUT checkbox tag
