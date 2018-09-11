@@ -21,7 +21,7 @@ $(document).ready(function () {
     });
   });
 
-  $('.locations > ul > li > input:checkbox').change(function () {
+  $('.locations > ul > li > h2 > input:checkbox').change(function () {
     if ($(this).is(':checked')) {
       stateChecked[$(this).data('id')] = $(this).data('name');
     } else {
